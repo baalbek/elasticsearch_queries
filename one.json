@@ -1,4 +1,7 @@
 {
+    "size" : 3,
+    /*"stored_fields" : [ "fornavn", "etternavn" ],*/
+    "_source" : [ "fornavn", "etternavn" ],
     "query" : {
         "query_string" : { "query" : "fodselsAar:1960" }
     }

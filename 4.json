@@ -1,0 +1,10 @@
+{
+    "size" : 3,
+    "_source" : [ "fornavn", "etternavn" ],
+    "query": {
+        "multi_match": {
+            "query" : "trond",
+            "fields" : [ "fornavn", "etternavn" ]
+        }
+    }
+}
