@@ -3,14 +3,14 @@
     "query": {
     "bool": {
         "must": [
-            { "match": { "fornavn": "ekker" }}
-          ]
+            { "match": { "firmaNavn": "kubon" }}
+            ]
         }
     },
     "aggs" : {
-        "distinct_persnr" : {
+        "distinct_ticker" : {
             "cardinality" : {
-                "field" : "persNr"
+                "field" : "orgNr.keyword"
             }
         }
     }

@@ -3,7 +3,7 @@
     "query": {
     "bool": {
         "must": [
-            { "match": { "fornavn": "ekker" }}
+            { "multi_match": { "query": "ekker", "fields" : [ "fornavn", "etternavn"] }}
           ]
         }
     },
