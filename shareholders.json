@@ -1,0 +1,18 @@
+
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "norwegian_company": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase",
+            "scandinavian_normalization"
+          ]
+        }
+      }
+    }
+  }
+}
+ 

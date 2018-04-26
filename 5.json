@@ -1,0 +1,11 @@
+{
+    "size": 0,
+    "aggs" : {
+        "persons" : {
+            "terms" : { "field" : "persNr",  "size" : 5 }
+        },
+        "companies" : {
+            "terms" : { "field" : "selskapTicker.keyword",  "size" : 5 }
+        }
+    }
+}

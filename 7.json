@@ -1,0 +1,17 @@
+{
+    /*"size": 1000,*/
+    "query": {
+    "bool": {
+        "must": [
+            { "match": { "etternavn": "ekker" }}
+            ]
+        }
+    },
+    "aggs" : {
+        "distinct_persnr" : {
+            "cardinality" : {
+                "field" : "persNr"
+            }
+        }
+    }
+}

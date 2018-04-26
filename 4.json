@@ -3,7 +3,7 @@
     "_source" : [ "fornavn", "etternavn" ],
     "query": {
         "multi_match": {
-            "query" : "trond",
+            "query" : "hjerpås",
             "fields" : [ "fornavn", "etternavn" ]
         }
     }

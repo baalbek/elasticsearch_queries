@@ -1,0 +1,21 @@
+{
+    "size": 10,
+    "query": {
+    "bool": {
+        "must": [
+            { "match": { "etternavn": "ekker" }}
+            /*
+            { "match": { "respCode": "00" }},
+            { "range": { "@timestamp": { "gte": "now-15m" }}}
+            */
+            ]
+        }
+    },
+    "aggs" : {
+        "distinct_persnr" : {
+            "cardinality" : {
+                "field" : "persNr"
+            }
+        }
+    }
+}
