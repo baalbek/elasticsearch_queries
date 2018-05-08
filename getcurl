@@ -2,6 +2,10 @@
 
 PORT="19200"
 
-curl -H 'Content-Type: application/json' -XGET "http://localhost:$PORT/shareholders_no/_search?pretty" -d  @"$1"
+URL="http://es6.prod.proff.eniro"
+
+INDEX="company_no_1525751798507"
+
+curl -H 'Content-Type: application/json' -XGET "$URL:$PORT/$INDEX/_search?pretty" -d  @"$1"
 
 exit 0 
